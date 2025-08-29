@@ -1,12 +1,9 @@
 import './App.css'
-
 function App() {
 
   return (
       <>
-      
-          <div className="frame"></div>
-
+        <img src="src\assets\Photo Frame.svg" alt="" />
       </>
     )
 }

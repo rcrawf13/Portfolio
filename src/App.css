@@ -15,10 +15,7 @@ body {
 }
 
 
-
-.frame {
-  background-image: url('/src/assets/Photo\ Frame.svg');
-  background-repeat: no-repeat;
-  height: 100%;
+img {
   width: 100%;
+
 }
