@@ -1,14 +1,15 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
 
-// https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
   server: {
-        watch: {
-          usePolling: true,
-          interval: 100,
-
-        },
-      },
-})
+    watch: {
+      usePolling: true,
+      interval: 100,
+      awaitWriteFinish: {
+        stabilityThreshold: 200,
+        pollInterval: 100
+      }
+    }
+  },
+  logLevel: 'info', // Show more detail in terminal
+});
