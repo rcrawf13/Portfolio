@@ -2,9 +2,15 @@ import './App.css'
 function App() {
 
   return (
-      <>
-        <img src="src\assets\Photo Frame.svg" alt="" />
-      </>
+    <>
+      <section className='splash'>
+            <div className="me"></div>
+        <div className='frame'>
+        </div>
+      </section>
+      
+      <section className='info'></section>
+    </>
     )
 }
 
